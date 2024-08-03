@@ -1,18 +1,17 @@
 const bcrypt = require('bcrypt');
-const User = require('./src/models/User'); // Adjust the path according to your project structure
-
+const User = require('./src/models/User'); 
 async function initializeUsers() {
   const users = [
     {
       username: 'admin',
       email: 'admin@example.com',
-      password: 'adminpassword', // You can change this to a more secure password
+      password: 'admin@123', 
       role: 'admin',
     },
     {
       username: 'user',
       email: 'user@example.com',
-      password: 'userpassword', // You can change this to a more secure password
+      password: 'user@123', 
       role: 'user',
     },
   ];

@@ -14,7 +14,7 @@ const app = express();
 
 
 const corsOptions = {
-  origin: ['http://localhost:3000', 'http://localhost:3001', 'https://clickshopify.netlify.app/', 'http://192.168.0.75:3001' ], 
+  origin: ['http://localhost:3000', 'http://localhost:3001', 'https://clickshopify.netlify.app', 'http://192.168.0.75:3001' ], 
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization',
 };

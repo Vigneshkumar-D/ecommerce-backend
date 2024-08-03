@@ -25,6 +25,7 @@ async function initializeUsers() {
       const hashedPassword = await bcrypt.hash(password, 10);
       await User.create({ username, email, password: hashedPassword, role });
       console.log(`Created ${role}: ${email}`);
+      console.log(`Created ${role}: ${password}`);
     } else {
       console.log(`${role} already exists: ${email}`);
     }
